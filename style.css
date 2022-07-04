@@ -42,7 +42,7 @@ label{
     font-style: italic;
     color: #000;
 }
-input#name{
+.nxg-input-text{
     width: 300px;
     border: 1px solid #ddd;
     border-radius: 3px;
