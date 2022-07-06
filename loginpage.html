@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="Operation.js"></script>
 </head>
 <body>
     <div class="sign_in_form">
     <h2>Sign in Now</h2>
     <form>
        <div id="container"><label >Enter email :</label></div> 
-        <input type="email" class="nxg-input-text" placeholder="Your Email">
+        <input type="email" class="nxg-input-text" placeholder="Your Email" id="email">
       <div id="container"> <label>Enter password :</label></div> 
-        <input type="password" class="nxg-input-text" placeholder="Your Password">
+        <input type="password" class="nxg-input-text" placeholder="Your Password" id="password">
         <p><span><input type="checkbox"></span>I agree to the terms of services</p>
-        <button type="button" class="signin-btn">Sign In</button>
+        <button type="button" class="signin-btn" onclick="validate()">Sign In</button>
         <hr>
         <p class="or">OR</p>
         <button type="button" class="signup-btn"><a href="C:\Users\asus\Desktop\Task\Test\css_and_form\formcss.html">Sign Up</a></button>
