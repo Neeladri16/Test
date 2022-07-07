@@ -4,7 +4,7 @@ function add()
     num1=Number(document.calculator.Number1.value);
     num2=Number(document.calculator.Number2.value);
     res=num1+num2;
-    document.getElementById("form").innerHTML="The result calculated is"+ res +".";
+    document.getElementById("result").innerHTML="The result calculated is"+ res +".";
    
 }
 function sub()
@@ -13,7 +13,7 @@ function sub()
     num1=Number(document.calculator.Number1.value);
     num2=Number(document.calculator.Number2.value);
     res=num1-num2;
-    document.getElementById("form").innerHTML="The result calculated is"+ res +".";
+    document.getElementById("result").innerHTML="The result calculated is"+ res +".";
 }
 function mult()
 {
@@ -21,7 +21,7 @@ function mult()
     num1=Number(document.calculator.Number1.value);
     num2=Number(document.calculator.Number2.value);
     res=num1*num2;
-    document.getElementById("form").innerHTML="The result calculated is"+ res +".";
+    document.getElementById("result").innerHTML="The result calculated is"+ res +".";
 }
 function div()
 {
@@ -29,5 +29,5 @@ function div()
     num1=Number(document.calculator.Number1.value);
     num2=Number(document.calculator.Number2.value);
     res=num1/num2;
-    document.getElementById("form").innerHTML="The result calculated is"+ res +".";
+    document.getElementById("result").innerHTML="The result calculated is"+ res +".";
 }
