@@ -25,13 +25,16 @@
         <label>Number2 :</label> 
         <input type="text" name="Number2" id="num2">
         <br>
-        <input type="button" onclick="add()" value="Add">
-        <input type="button" onclick="sub()" value="Substract">
-        <input type="button" onclick="mult()" value="Multiply">
-        <input type="button" onclick="div()" value="Divide">
-   
+        <input type="button" onclick="arithmetic('add')" value="Add">
+        <input type="button" onclick="arithmetic('sub')" value="Substract">
+        <input type="button" onclick="arithmetic('mult')" value="Multiply">
+        <input type="button" onclick="arithmetic('div')" value="Divide">
+        <br>
+        <input type="button" onclick="change('minus')" value="-">
+        <input type="text" name="" value="0" id="num3"> 
+        <input type="button" onclick="change('plus')" value="+">
     </form>
-    <p id="result"></p> 
+   <center><p id="result"></p> </center> 
 </div>
 </body>
 </html>
