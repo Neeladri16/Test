@@ -1,0 +1,21 @@
+.product-card-image {
+    height: 300px;
+}
+
+.category-tumb, .product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    max-width: 100%!important;
+    box-shadow: unset!important;
+    border: 1px solid #f0eeee;
+}
