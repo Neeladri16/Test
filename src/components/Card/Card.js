@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { useState, useEffect } from "react";
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -33,14 +33,14 @@ export default function Card() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
         <Grid container item spacing={2}>
-          {data.products != undefined
+          {data.products !== undefined
             ? data.products.map((item, index) => (
                 <Item key={index}>
                <img
-                    src={item.image}
+                    src={item.image} alt=""
                     justify-content="center"
                     align="centre"
-                    style={{ width: 200, height: 150, margin: 14 }}
+                    style={{ width: 200, margin: 14 }}
                   />
                   <h3>Price:{item.price}</h3>
                   <h4>Rating:{item.rating}</h4>

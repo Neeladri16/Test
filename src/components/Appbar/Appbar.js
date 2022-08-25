@@ -58,19 +58,19 @@ export default function MenuAppBar() {
           <Link to="/" exact={1} >Home Page</Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to="/Photos" exact={1} >Photos</Link>
+            <Link to="/Photos" >Photos</Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <Link to="/Products" exact={1} >Products</Link>
+          <Link to="/Products" >Products</Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <Link to="/About_us" exact={1} >About us</Link>
+          <Link to="/About_us" >About us</Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to="/Contact_us" exact={1} > Contact us</Link>
+            <Link to="/Contact_us" > Contact us</Link>
           </Typography>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-             <Link to="/More" exact={1} > More</Link>
+             <Link to="/More" > More</Link>
           </Typography>
           {auth && (
             <div>

@@ -3,9 +3,22 @@ import { useParams } from "react-router-dom"
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import * as React from "react";
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import {  grey } from '@mui/material/colors';
+import {Link} from 'react-router-dom'
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText( grey[500]),
+  backgroundColor:  grey[500],
+  '&:hover': {
+    backgroundColor:  grey[700],
+  },
+}));
 
 
-  export default  function Details(){
+  export default  function Details(props){
      const [data, setData] = useState([]);
      //const [allcombinations,setAllcombinations]=useState([])
      var {id} =useParams(); 
@@ -20,22 +33,13 @@ import * as React from "react";
       });
     });
     console.log("useEffect");
-  }, []);
-  
+  }, [id]);
+
   const variants =(option,val) => {
     console.log("variants",val,option)
    // const arr=[{val,option}]                                          
    // console.log("arr",arr)
-   var obj={};
-    
-   for(var i=0;i<=option.length;i++)
-   {
-    obj[option[i]]=val[i]
-   }
-   for (var option of Object.option(obj)) {
-    document.write(option + " => " + obj[option] + "</br>")
-}
-console.log("obj",obj)
+   
   }
 
   console.log("pid",id)
@@ -60,7 +64,7 @@ console.log("obj",obj)
                          <img src={val.img_url} alt=""
                           justify-content="center"
                           align="centre"
-                          style={{ width: '80%',  margin: 4 }} />
+                          style={{ width: 200,  margin: 4 }} />
                         </div>
                 ))
               }
@@ -98,6 +102,16 @@ console.log("obj",obj)
             </div>
         )):""
     }
+
+     <Stack spacing={2} direction="row"  style={{
+                                                alignItems:'center',
+                                                justifyContent:'center',}}>
+      <ColorButton  variant="contained">
+      <Link to="/Cart" >Add to cart</Link>
+        </ColorButton>
+    
+    </Stack>
+
     </Paper>
   </Box>
     );

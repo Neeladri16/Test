@@ -23,8 +23,8 @@ export default function Banner(props) {
             } */}   
       {data.map((item,i) => (
         <div key={i}>
-          <img
-            src={item.image}
+          <img alt=""
+            src={item.image} 
             justify-content="center"
             align="centre"
             style={{ width: 1300, height: 500 }}
